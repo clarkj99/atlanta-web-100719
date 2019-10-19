@@ -27,10 +27,6 @@ post.comments.create(content: "I like yeetin' haws. :D")
 
 # Show EACH post and the comments for each in output.
 
-# binding.pry
-# Post.find_each do |post|
-#   p post.comments
-# end
 post.comments.find_each do |post|
   p post.content
 end
